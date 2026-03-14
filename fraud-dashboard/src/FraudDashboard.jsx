@@ -8,7 +8,7 @@ import {
 /* ═══════════════════════════════════════════════════
    CONFIG
 ═══════════════════════════════════════════════════ */
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 async function api(path, opts = {}) {
     try {
@@ -1008,7 +1008,7 @@ export default function FraudShield() {
                 <div className="main">
                     <div className={`banner ${conn === "ok" ? "ok" : conn === "error" ? "err" : "chk"}`}>
                         {conn === "ok" ? "✅ Connected" : "checking" === "checking" ?
-                            "⟳ Connecting to backend at localhost:5000..." :
+                            "⟳ Connecting to backend..." :
                             "✕ Backend not reachable — run: python app.py"}
                     </div>
                     <div className="sg">

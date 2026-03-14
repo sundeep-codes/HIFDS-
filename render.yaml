@@ -1,0 +1,30 @@
+services:
+  # -------------------------------------------------------------------
+  # 1. Backend API (FastAPI/Flask)
+  # -------------------------------------------------------------------
+  - type: web
+    name: fraudshield-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: SECRET_KEY
+        generateValue: true
+
+  # -------------------------------------------------------------------
+  # 2. Frontend React Dashboard (Vite)
+  # -------------------------------------------------------------------
+  - type: web
+    name: fraudshield-frontend
+    env: static
+    buildCommand: "cd fraud-dashboard && npm install && npm run build"
+    staticPublishPath: "fraud-dashboard/dist"
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: fraudshield-backend
+          envVarKey: RENDER_EXTERNAL_URL
+        value: /api
