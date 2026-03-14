@@ -1,0 +1,6 @@
+decision_id,claim_id,decision,reason,timestamp,used_for_training
+0103f366,CLM_08133,Investigate,,2026-03-14T07:15:47.150086,True
+f3b92cf4,CLM_08133,Approve,,2026-03-14T07:15:49.232520,True
+36f4bb13,CLM_08973,Approve,,2026-03-14T07:16:22.475051,True
+6f89355c,CLM_08172,Investigate,,2026-03-14T07:23:40.259467,True
+1c880e70,CLM_08133,Approve,,2026-03-14T08:33:05.660193,True
