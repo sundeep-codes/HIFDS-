@@ -1,0 +1,20 @@
+provider_id,provider_name,specialization,city,avg_daily,is_fraudulent,fraud_ring
+DR001,Dr. Rajiv Shah,Cardiologist,Mumbai,8,False,None
+DR002,Dr. Priya Mehta,Orthopedic,Delhi,6,False,None
+DR003,Dr. Arun Nair,Neurologist,Bangalore,5,False,None
+DR004,Dr. Sunita Reddy,Gynecologist,Chennai,7,False,None
+DR005,Dr. Vijay Patel,General,Pune,9,False,None
+DR006,Dr. Kavya Iyer,Dermatologist,Hyderabad,4,False,None
+DR007,Dr. Mohan Gupta,Cardiologist,Kolkata,6,False,None
+DR008,Dr. Neha Sharma,Pediatrician,Ahmedabad,8,False,None
+DR009,Dr. Ramesh Fraud,General,Mumbai,52,True,None
+DR010,Dr. Ghost Biller,Orthopedic,Delhi,48,True,None
+DR011,Dr. Fake Claims,Cardiologist,Bangalore,61,True,None
+LAB001,LabXYZ Diagnostics,Laboratory,Mumbai,45,True,None
+LAB002,QuickTest Labs,Laboratory,Delhi,38,True,None
+DR012,Dr. Ring Leader,General,Mumbai,55,True,RING_A
+DR013,Dr. Ring Member A,Orthopedic,Mumbai,42,True,RING_A
+LAB003,Ring Lab Services,Laboratory,Mumbai,50,True,RING_A
+DR014,Dr. Shadow Doc,Neurologist,Delhi,47,True,RING_B
+DR015,Dr. Phantom Bills,General,Delhi,44,True,RING_B
+LAB004,Ghost Diagnostics,Laboratory,Delhi,39,True,RING_B
