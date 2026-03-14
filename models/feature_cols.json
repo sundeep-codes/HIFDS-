@@ -1,0 +1,1 @@
+["claim_amount", "patient_age", "cost_deviation", "cost_ratio", "provider_daily_count", "volume_spike", "age_mismatch", "is_duplicate", "patient_claim_count", "is_high_risk_provider", "amount_percentile", "is_weekend", "procedure_enc", "city_enc", "plan_enc"]
